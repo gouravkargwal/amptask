@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f3fb1;
+    padding: 0 20px 60px 20px;
+}
+.title{
+    position: relative;
+    top: 0;
+    margin: 0;
+    background-color: #2057c4;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+.title img{
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+}
+.sub-title{
+    display: block;
+    text-align: center;
+    font-size: 3.2rem;
+}
+.description{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.details{
+    text-align: center;
+}
+input{
+    display: inline-block;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 8px;
+    height: 30px;
+    border: 0;
+    padding-left: 8px;
+}
+input[type=email]{
+    margin-bottom: 0;
+}
+input:focus{
+    outline: 0;
+}
+.form-info{
+    margin-top: 0;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.btn{
+    display: inline;
+    background-color: #007bff;
+    color: white;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #0069d9;
+}
+.featured{
+    color: darkblue;
+}
+.featured h1{
+    text-align: center;
+}
+.featured-image{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.featured-image img{
+    max-width: 100px;
+    margin: 20px;
+}
+footer{
+    color: darkblue;
+    text-align: center;
+}
+@media (min-width: 800px){
+    .main{
+        height: 100vh;
+        justify-content: stretch;
+    }
+    .title{
+        left: -30vw;
+    }
+    .sub-title{
+        font-weight: bolder;
+    }
+    input{
+        width: 40%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    input[type=email]{
+        width: 83%;
+    }
+    .featured-image{
+        display: flex;
+        grid-gap:0 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .featured-image img{
+        margin-right: 4rem;
+    }
+}
